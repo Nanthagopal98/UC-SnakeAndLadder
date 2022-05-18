@@ -9,5 +9,5 @@ namespace SnakeAndLadder
     public class snakeGame
     {
         int player1 = 0;
-    }
+    }  
 }
