@@ -17,7 +17,7 @@ namespace SnakeAndLadder
                 int diceValue = dice.Next(1, 7);
                 if (player1 < 100 && player1 >= 0)
                 {
-                    Console.WriteLine(diceValue);
+                    Console.WriteLine("Dice value = " + diceValue);
                     int possibility = dice.Next(3);
                     switch (possibility)
                     {
@@ -30,15 +30,15 @@ namespace SnakeAndLadder
                         case 0: // noPlay
                             break;
                     }
-                    Console.WriteLine(player1);
+                    Console.WriteLine("Player current position = " + player1);
                     if(player1>100)
                     {
                         player1 = player1 - diceValue;
                     }
                 }
-                else { player1 = 0; }
-                diceCount++;
-                
+                else if (player1 < 0)
+                { player1 = 0; }
+                diceCount++; 
             }
             Console.WriteLine("Number of times dice rolled = " + diceCount);
         }
