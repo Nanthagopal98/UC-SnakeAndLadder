@@ -8,7 +8,7 @@ namespace SnakeAndLadder
 {
     public class snakeGame
     {
-        int player1 = 0,diceCount=0;
+        int player1 = 0;
         public void startGame()
         {
             for (player1 = 0; player1 < 100;)
@@ -30,17 +30,10 @@ namespace SnakeAndLadder
                         case 0: // noPlay
                             break;
                     }
-                    Console.WriteLine(player1);
-                    if(player1>100)
-                    {
-                        player1 = player1 - diceValue;
-                    }
                 }
                 else { player1 = 0; }
-                diceCount++;
-                
+                Console.WriteLine(player1);
             }
-            Console.WriteLine("Number of times dice rolled = " + diceCount);
         }
         
     }
