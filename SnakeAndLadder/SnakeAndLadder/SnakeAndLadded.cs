@@ -37,10 +37,10 @@ namespace SnakeAndLadder
                     }
                 }
                 else { player1 = 0; }
-                diceCount++;
+                
                 
             }
-            Console.WriteLine("Number of times dice rolled = " + diceCount);
+            
         }
         
     }
